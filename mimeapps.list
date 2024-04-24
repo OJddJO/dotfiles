@@ -1,0 +1,16 @@
+[Default Applications]
+font/ttf=org.fcitx.Fcitx5.desktop
+application/pdf=org.gnome.Evince.desktop
+application/octet-stream=code.desktop
+modrinth=modrinth-app-handler.desktop
+
+[Added Associations]
+font/ttf=gcr-viewer.desktop;org.fcitx.Fcitx5.desktop;
+application/pdf=libreoffice-writer.desktop;libreoffice-draw.desktop;org.gnome.Evince.desktop;
+application/octet-stream=code.desktop;
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+text/x-python=code.desktop;
+text/css=code.desktop;
+application/x-msdownload=wine.desktop;protontricks-launch.desktop;
+video/mp4=vlc.desktop;mpv.desktop;

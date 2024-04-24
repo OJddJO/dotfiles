@@ -1,0 +1,2 @@
+#!/bin/sh
+yad --title="Garuda Sway-WM keybindings:" --no-buttons --geometry=400x345-15-400 --list --column=Key: --column=Description: "ESC" "Close this app" "=" "Modkey" "+↩" "Terminal" "+d" "Application Menu" "+⇧+d" "Full Launcher" "+p" "Activities" "+o" "" "+e" "" "+q" "Close Focused App" "+⇧+Arrow" "Move window" "+-" "Scratchpad" "+⇧+-" "Move Window to Scratchpad" "⇧+Print" "Screenshot" "+⇧+0" "Power Menu" "+⇧+p" "Open Keybinding Helper"

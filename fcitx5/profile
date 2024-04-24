@@ -1,0 +1,17 @@
+[Groups/0]
+# Group Name
+Name="Groupe 2"
+# Layout
+Default Layout=fr-oss
+# Default Input Method
+DefaultIM=keyboard-fr-oss
+
+[Groups/0/Items/0]
+# Name
+Name=keyboard-fr-oss
+# Layout
+Layout=
+
+[GroupOrder]
+0="Groupe 2"
+
