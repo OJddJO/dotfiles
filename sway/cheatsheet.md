@@ -13,8 +13,7 @@
            f1          *lock screen* (`swaylock`)
 
 # screenshot
-            PrintSrc    *full screenshot*
-     Shift  PrintSrc    *screenshot options*
+            PrintSrc    *screenshot*
 
 # application shortcuts
            e           *file manager* (`thunar`)
