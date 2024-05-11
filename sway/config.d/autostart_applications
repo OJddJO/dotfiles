@@ -11,7 +11,7 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
      
 # Sway Fader
-# exec python3 ~/.config/sway/scripts/swayfader.py     
+exec python3 ~/.config/sway/scripts/swayfader.py     
  
 # Wob
 exec mkfifo $SWAYSOCK.wob

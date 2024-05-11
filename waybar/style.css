@@ -50,7 +50,7 @@ nord15 #b48ead
     margin-right: 5px;
     margin-left: 5px;
     padding-top: 1px;
-    padding-bottom:3px;
+    padding-bottom:2px;
    }
 
 window#waybar {
@@ -75,7 +75,7 @@ window#waybar {
     color: #ebcb8b;
 }
 
-#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman, #custom-network_traffic {
+#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman, #custom-scratchpad_indicator, #custom-network_traffic {
     padding: 0 3px;
     border-bottom: 2px;
     border-style: solid;
@@ -149,7 +149,7 @@ window#waybar {
 }
 
 #network{
-    color:#a3be8c;
+    color:#80a2d4;
 }
 
 #network.disconnected {
@@ -165,7 +165,7 @@ window#waybar {
 }
 
 #temperature {
-    color: #8fbcbb;
+    color: #a97ed1;
 }
 
 #temperature.critical {
@@ -192,9 +192,16 @@ window#waybar {
     margin-bottom:3px;
 }
 
+#custom-pacman{
+    color:#aed69c;
+}
+
 #custom-keyboard-layout{
    color:#d08770;
 }   
 
+#custom-scratchpad_indicator{
+    color:#d08770;
+}
 
 

@@ -9,7 +9,7 @@ gaps outer 5
 default_border pixel 1
 
 # Default Font
-font pango:JetbrainsMonoNL 10
+font pango:JetbrainsMonoNL Nerd Font 10
 
 # Thin borders
 smart_borders on
