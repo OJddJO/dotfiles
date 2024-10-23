@@ -19,6 +19,7 @@
         "cpu",
         "memory",
         "temperature",
+        "bluetooth",
         "network",
         "custom/network_traffic",
         "tray",
@@ -61,11 +62,11 @@
     },
     "cpu": {
         "format": "{usage: >3}%",
-        "on-click": "alacritty -e htop"
+        "on-click": "alacritty -e btop"
     },
     "memory": {
         "format": "{: >3}%",
-        "on-click": "alacritty -e htop"
+        "on-click": "alacritty -e btop"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -101,6 +102,18 @@
             ""
         ]
         //"format-icons": ["", "", "", "", "", "", "", "", "", ""]
+    },
+    "bluetooth": {
+        "format-on": " On",
+        "format-off": " Off",
+        "format-connected": " Connected",
+        "format-disconnected": " Disconnected",
+        "tooltip-format-off": " Off",
+        "tooltip-format-connected": " {device_alias}",
+        "tooltip-format-disconnected": " Disconnected",
+        // switch bluetooth state on click
+        "on-click": "bluetoothctl power on",
+        "on-click-right": "bluetoothctl power off",
     },
     "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface

@@ -75,7 +75,7 @@ window#waybar {
     color: #ebcb8b;
 }
 
-#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman, #custom-scratchpad_indicator, #custom-network_traffic {
+#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #bluetooth, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman, #custom-scratchpad_indicator, #custom-network_traffic {
     padding: 0 3px;
     border-bottom: 2px;
     border-style: solid;
@@ -173,6 +173,14 @@ window#waybar {
 }
 
 #tray {
+}
+
+#bluetooth.on, #bluetooth.connected{
+    color: #80a2d4
+}
+
+#bluetooth.off, #bluetooth.disconnected{
+    color: #bf616a
 }
 
 #custom-network_traffic {

@@ -114,16 +114,16 @@ exec swayidle -w\
     bindsym $mod+f9 workspace number 9
     bindsym $mod+f10 workspace number 10
     # Move focused container to workspace
-    bindsym $mod+Alt+f1 move container to workspace number 1
-    bindsym $mod+Alt+f2 move container to workspace number 2
-    bindsym $mod+Alt+f3 move container to workspace number 3
-    bindsym $mod+Alt+f4 move container to workspace number 4
-    bindsym $mod+Alt+f5 move container to workspace number 5
-    bindsym $mod+Alt+f6 move container to workspace number 6
-    bindsym $mod+Alt+f7 move container to workspace number 7
-    bindsym $mod+Alt+f8 move container to workspace number 8
-    bindsym $mod+Alt+f9 move container to workspace number 9
-    bindsym $mod+Alt+f10 move container to workspace number 10
+    bindsym $mod+Alt+f1 move container to workspace number 1 , workspace number 1
+    bindsym $mod+Alt+f2 move container to workspace number 2 , workspace number 2
+    bindsym $mod+Alt+f3 move container to workspace number 3 , workspace number 3
+    bindsym $mod+Alt+f4 move container to workspace number 4 , workspace number 4
+    bindsym $mod+Alt+f5 move container to workspace number 5 , workspace number 5
+    bindsym $mod+Alt+f6 move container to workspace number 6 , workspace number 6
+    bindsym $mod+Alt+f7 move container to workspace number 7 , workspace number 7
+    bindsym $mod+Alt+f8 move container to workspace number 8 , workspace number 8
+    bindsym $mod+Alt+f9 move container to workspace number 9 , workspace number 9
+    bindsym $mod+Alt+f10 move container to workspace number 10 , workspace number 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 
@@ -219,11 +219,12 @@ bindsym XF86AudioMute exec pamixer --toggle-mute && ( pamixer --get-mute && echo
 # App shortcuts
 #
     bindsym $mod+e exec thunar
-    bindsym $mod+o exec com.microsoft.Edge
+    bindsym $mod+o exec opera
 #
 # Screenshots
 #
     bindsym print exec grimshot --notify savecopy anything
+    bindsym $mod+shift+s exec grimshot --notify savecopy anything
 
 #
 # Update
