@@ -1,0 +1,75 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 4,
+    "height": 44,
+    "margin": 5,
+    "modules-left" : [
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "network",
+        "battery",
+        "tray"
+    ],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "active-only": false,
+        "disable-scroll": true,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+
+    "hyprland/window": {
+        "max-length": 60
+    },
+
+    "clock": {
+        "format": "{:%H:%M}"
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-icons": {
+            "headphone": "",
+            "default": ["", "", ""]
+        }
+    },
+         // "device": "acpi_video1",
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "network": {
+        "format-wifi": "{essid} ",
+        "format-disconnected": "Disconnected ⚠"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "tray": {
+        "spacing": 10
+    }
+}

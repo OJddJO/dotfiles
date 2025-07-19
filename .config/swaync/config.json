@@ -1,0 +1,25 @@
+{
+	"notification-center": {
+		"layer": "top",
+		"edge-anchors": ["top", "right"],
+		"control-center-width": 350,
+		"notification-window-width": 350,
+		"spacing": 4,
+		"hide-on-clear": false,
+		"hide-on-action": false,
+		"timeout": 5,
+	},
+	"widgets": {
+		"dnd": true,
+		"mpris": false,
+		"title": true,
+		"buttons": true,
+		"volume": false,
+		"backlight": false,
+	},
+	"position": "top-right",
+	"notification": {
+		"default-timeout": 3000,
+		"max-visible": 5,
+	}
+}
