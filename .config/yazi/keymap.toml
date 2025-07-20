@@ -1,0 +1,63 @@
+[mgr]
+keymap = [
+    {run = "escape", on = "<Esc>"},
+    {run = "quit", on = "q", desc = "Quit yazi"},
+    {run = "close", on = "<C-w>", desc = "Close current tab"},
+
+    {run = "arrow -1", on = "<Up>", desc = "Move cursor up"},
+    {run = "arrow 1", on = "<Down>", desc = "Move cursor down"},
+    {run = "arrow -5", on = "<C-Up>", desc = "Fast move cursor up"},
+    {run = "arrow 5", on = "<C-Down>", desc = "Fast move cursor down"},
+    {run = "arrow -5", on = "<PageUp>"},
+    {run = "arrow 5", on = "<PageDown>"},
+    {run = "leave", on = "<Left>", desc = "Leave current directory"},
+    {run = "enter", on = "<Right>", desc = "Enter hovered directory"},
+
+    {run = "back", on = "<C-z>", desc = "Move to the previous directory"},
+    {run = "forward", on = "<C-y>", desc = "Move to the next directory"},
+
+    {run = "seek -1", on = "<S-Up>", desc = "Scroll the content up in the preview"},
+    {run = "seek 1", on = "<S-Down>", desc = "Scroll the content down the preview"},
+    {run = "seek -5", on = "<S-PageUp>", desc = "Fast scroll the content up in the preview"},
+    {run = "seek 5", on = "<S-PageDown>", desc = "Fast scroll the content down in the preview"},
+
+    {run = "cd --interactive", on = "<C-o>", desc = "Change the current directory"},
+    {run = "cd --interactive", on = "<C-Enter>"},
+
+    {run = "toggle", on = "<Space>", desc = "Select a file"},
+    {run = "toggle_all", on = "<C-a>", desc = "Select all files"},
+
+    {run = "open --hovered", on = "<Enter>", desc = "Open a file"},
+
+    {run = "yank", on = "<C-c>", desc = "Copy selected files"},
+    {run = "yank --cut", on = "<C-x>", desc = "Cut selected files"},
+    {run = "paste", on = "<C-v>", desc = "Paste selected files"},
+
+    {run = "remove", on = "<Delete>", desc = "Move selected files to trash"},
+    {run = "create", on = "<C-n>", desc = "Create a new file/directory"},
+    {run = "create --force", on = "<C-A-n>", desc = "Force create a new file/directory"},
+    {run = "rename --hovered --cursor=before_ext", on = "<F2>", desc = "Rename a file/directory"},
+
+    {run = "copy path --hovered", on = "<C-S-c>", desc = "Copy the path of the file/directory"},
+
+    {run = "shell --interactive --orphan", on = "<A-Enter>", desc = "Run a shell command"},
+
+    {run = "search --via=fd --args='-H -I'", on = "s", desc = "Search files/directories"},
+    {run = "find --smart", on = "<C-f>", desc = "Find string in filename"},
+
+    {run = "tab_create", on = "<C-t>", desc = "Create a new tab"},
+    {run = "tab_switch -1 --relative", on = "<A-Left>", desc = "Switch to previous tab"},
+    {run = "tab_switch 1 --relative", on = "<A-Right>", desc = "Switch to next tab"},
+    {run = "help", on = "h", desc = "Open the help menu"},
+]
+
+[tasks]
+
+keymap = [
+    {run = "show", on = "t", desc = "Show task manager"},
+    {run = "arrow -1", on = "<Up>", desc = "Scroll up"},
+    {run = "arrow 1", on = "<Down>", desc = "Scroll down"},
+    {run = "inspect", on = "<Enter>", desc = "Inspect the task log"},
+    {run = "cancel", on = "<Delete>", desc = "Cancel the task"},
+    {run = "help", on = "h", desc = "Open the help menu"},
+]

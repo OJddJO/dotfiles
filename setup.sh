@@ -9,9 +9,7 @@ cd yay
 makepkg -si --noconfirm
 
 # dependencies
-yay -Sq pacseek ttf-jetbrains-mono-nerd hyprpaper hyprcursor bibata-cursor-git
-
-sudo pacman -Sq swaync waybar zsh
+yay -Sq pacseek ttf-jetbrains-mono-nerd hyprpaper hyprcursor bibata-cursor-git swaync waybar zsh
 
 # zsh setup
 chsh -s /bin/zsh
@@ -35,5 +33,4 @@ cp -f background.jpg ~/
 
 sh -c sddm-astronaut-theme/setup.sh
 
-sudo pacman -Sq visual-studio-code-bin firefox
-yay -Sq opera opera-ffmpeg-codecs btop
+yay -Sq visual-studio-code-bin opera opera-ffmpeg-codecs btop yazi
