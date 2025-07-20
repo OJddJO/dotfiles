@@ -29,7 +29,7 @@ cd dotfiles
 cp -rf .config/ ~/
 cp -rf .icons/ ~/
 cp -rf .oh-my-zsh/ ~/
-cp -rf .zshrc ~/
-cp -rf .p10k.zsh ~/
+cp -f .zshrc ~/
+cp -f .p10k.zsh ~/
 
 sh -c sddm-astronaut-theme/setup.sh
