@@ -34,3 +34,6 @@ cp -f .p10k.zsh ~/
 cp -f background.jpg ~/
 
 sh -c sddm-astronaut-theme/setup.sh
+
+sudo pacman -Sq visual-studio-code-bin firefox
+yay -Sq opera opera-ffmpeg-codecs btop
