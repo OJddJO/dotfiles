@@ -9,13 +9,27 @@ cd yay
 makepkg -si --noconfirm
 
 # dependencies
-yay -Sq pacseek ttf-jetbrains-mono-nerd hyprpaper hyprcursor
+yay -Sq pacseek ttf-jetbrains-mono-nerd hyprpaper hyprcursor bibata-cursor-git
 
-sudo pacman -Sq swaync waybar bibata-cursor-git
+sudo pacman -Sq swaync waybar zsh
+
+# zsh setup
+chsh -s /bin/zsh
+
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+#install powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 # install dotfiles
 cd /tmp
 git clone https://github.com/OJddJO/dotfiles.git
 cd dotfiles
-cp -rf .config ~/.config
-cp -rf .icons ~/.icons
+cp -rf .config/ ~/
+cp -rf .icons/ ~/
+cp -rf .oh-my-zsh/ ~/
+cp -rf .zshrc ~/
+cp -rf .p10k.zsh ~/
+
+sh -c sddm-astronaut-theme/setup.sh
