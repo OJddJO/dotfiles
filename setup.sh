@@ -31,5 +31,6 @@ cp -rf .icons/ ~/
 cp -rf .oh-my-zsh/ ~/
 cp -f .zshrc ~/
 cp -f .p10k.zsh ~/
+cp -f background.jpg ~/
 
 sh -c sddm-astronaut-theme/setup.sh
