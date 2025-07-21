@@ -33,4 +33,4 @@ cp -f .zshrc ~/
 cp -f .p10k.zsh ~/
 cp -f background.jpg ~/
 
-sh -c sddm-astronaut-theme/setup.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)"
