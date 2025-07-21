@@ -20,6 +20,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #install powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
+yay -Sq visual-studio-code-bin opera opera-ffmpeg-codecs btop yazi
+
 # install dotfiles
 cd /tmp
 git clone https://github.com/OJddJO/dotfiles.git
@@ -32,5 +34,3 @@ cp -f .p10k.zsh ~/
 cp -f background.jpg ~/
 
 sh -c sddm-astronaut-theme/setup.sh
-
-yay -Sq visual-studio-code-bin opera opera-ffmpeg-codecs btop yazi
